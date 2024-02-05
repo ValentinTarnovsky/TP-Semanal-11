@@ -117,13 +117,14 @@ footer .container {
   height: 2rem;
   margin-bottom: 0.5rem;
   padding-left: 0.5rem;
+  font-size: 1.3rem;
 }
 .form form textarea {
   resize: none;
   height: 4rem;
 }
 .form form h3 {
-  margin-top: 0.5rem;
+  margin: 0.5rem 0;
   text-decoration: underline;
 }
 .form form span {
