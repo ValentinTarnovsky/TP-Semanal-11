@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Roboto:wght@300;400;700&family=Yesteryear&display=swap");
+:root {
+  --font-light: 300;
+  --font-regular: 400;
+  --font-bold: 700;
+  --shadow-color: rgba(0, 0, 0, 0.2);
+  --bg-color: #F5F6F4;
+  --main-color: #81C3D7;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Roboto, Arial, Helvetica;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+.btn-card--add,
+.btn-card--remove {
+  padding: 0 1rem;
+  background-color: transparent;
+  border: 1px solid;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-card--add {
+  color: rgb(0, 150, 0);
+}
+.btn-card--add:hover {
+  background-color: rgba(0, 255, 0, 0.4);
+  color: rgb(0, 180, 0);
+}
+
+.btn-card--remove {
+  color: rgb(150, 0, 0);
+}
+.btn-card--remove:hover {
+  background-color: rgba(255, 0, 0, 0.4);
+  color: rgb(150, 0, 0);
+}
+
+.card {
+  padding: 0.5rem;
+  border: 2px solid var(--main-color);
+  box-shadow: 2px 2px 4px rgba(128, 128, 128, 0.5);
+  border-radius: 0.5rem;
+  width: 30rem;
+  height: 7.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card .card-info {
+  display: flex;
+  justify-content: space-between;
+}
+.card .card-info span {
+  font-weight: var(--font-bold);
+}
+.card .card-info .card-cont {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.container {
+  max-width: 994px;
+  margin-inline: 1rem;
+  margin: auto;
+}
+
+.title {
+  margin-top: 2rem;
+}
+
+footer .container {
+  border-top: 3px solid var(--main-color);
+  text-align: center;
+  padding: 1rem;
+}
+
+.form {
+  padding: 1rem 0;
+}
+.form form {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.form form label,
+.form form input,
+.form form textarea {
+  width: 100%;
+}
+.form form label {
+  margin-left: 0.5rem;
+  font-weight: var(--font-bold);
+}
+.form form input {
+  height: 2rem;
+  margin-bottom: 0.5rem;
+  padding-left: 0.5rem;
+}
+.form form textarea {
+  resize: none;
+  height: 4rem;
+}
+.form form h3 {
+  margin-top: 0.5rem;
+  text-decoration: underline;
+}
+.form form span {
+  margin-top: 0.5rem;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: var(--bg-color);
+}
+
+main {
+  padding: 1rem;
+}
+
+.section1 {
+  margin-top: 5.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.section1 span {
+  font-size: 1.5rem;
+}
+
+.products {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.products h2 {
+  text-decoration: underline;
+  text-align: center;
+}
+
+.navbar {
+  padding: 1rem 0;
+  text-align: center;
+  border-bottom: 3px solid var(--main-color);
+}
+.navbar h1,
+.navbar span {
+  font-size: 2rem;
+  text-shadow: 1px 1px 5px var(--shadow-color);
+}/*# sourceMappingURL=main.css.map */
