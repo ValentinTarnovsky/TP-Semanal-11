@@ -122,6 +122,8 @@ footer .container {
 .form form textarea {
   resize: none;
   height: 4rem;
+  font-size: 1.3rem;
+  padding-left: 0.5rem;
 }
 .form form h3 {
   margin: 0.5rem 0;
@@ -167,6 +169,11 @@ main {
 .products h2 {
   text-decoration: underline;
   text-align: center;
+}
+@media screen and (max-width: 992px) {
+  .products {
+    gap: 0.5rem;
+  }
 }
 
 .navbar {

@@ -22,4 +22,8 @@ main {
         text-decoration: underline;
         text-align: center;
     }
+
+    @media screen and (max-width: 992px) {
+        gap: .5rem;
+    }
 }
