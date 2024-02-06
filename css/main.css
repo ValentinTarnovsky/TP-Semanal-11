@@ -56,6 +56,19 @@ body {
   color: rgb(150, 0, 0);
 }
 
+.submit {
+  padding: 0.5rem 3rem;
+  border: 3px inset rgb(0, 255, 21);
+  color: rgb(0, 255, 21);
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.submit:hover {
+  border-style: outset;
+  box-shadow: 1px 1px 4px var(--shadow-color);
+}
+
 .card {
   padding: 0.5rem;
   border: 2px solid var(--main-color);
@@ -174,6 +187,12 @@ main {
   .products {
     gap: 0.5rem;
   }
+}
+
+.btnsend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar {

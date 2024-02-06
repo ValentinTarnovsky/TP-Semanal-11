@@ -24,3 +24,16 @@
         color: rgb(150, 0, 0);
     }
 }
+
+.submit {
+    padding: .5rem 3rem;
+    border: 3px inset rgb(0, 255, 21);
+    color: rgb(0, 255, 21);
+    font-size: 1.5rem;
+    transition: all .3s ease;
+    cursor: pointer;
+    &:hover {
+        border-style: outset;
+        box-shadow: 1px 1px 4px var(--shadow-color);
+    }
+}
