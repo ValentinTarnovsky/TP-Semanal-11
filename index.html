@@ -19,9 +19,25 @@
     </header>
 
     <main>
+        <div class="modal" id="modal">
+            <div class="pedido-realizado container">
+                <span class="close" id="close">x</span>
+                <h1>Pedido realizado <i class="ri-check-double-line"></i></h1>
+                <h2>Número de orden: #<span id="orden-nm">0</span></h2>
+                <h3>Resumen del pedido:</h3>
+                <div class="resumen" id="resumen"></div>
+                <h3>Precio:</h3>
+                <div id="pricemodal"></div>
+            </div>
+        </div>
+        <div class="modal-error" id="error">
+            <div class="container">
+                <p><span class="err">Error:</span> <span id="error-desc">.</span></p>
+            </div>
+        </div>
         <div class="container section1">
             <h2>Productos</h2>
-            <span class="cart"><i class="ri-shopping-cart-line"> 0</i></span>
+            <span class="cart"><i class="ri-shopping-cart-line" id="cart">0</i></span>
         </div>
         <div id="products" class="products container"></div>
         <div class="container">
@@ -44,19 +60,19 @@
                 <label>Comentarios:</label>
                 <textarea name="comentarios" id="comentarios"></textarea>
 
-                <span class="form-error">Error Error Error</span>
+                <span class="form-error" id="form-error">Error:</span>
 
                 <h3>Informacion del pedido</h3>
 
                 <label>Total de Productos</label>
-                <input type="text" id="products" name="products" value="0" readonly>
+                <input type="text" id="products-form" name="products" value="0" readonly>
 
                 <label>Precio Final</label>
-                <input type="number" id="precio" name="precio" value="0" readonly>
+                <input type="text" id="precio" name="precio" value="$0" readonly>
             </form>
         </div>
         <div class="container btnsend">
-            <button class="submit">Enviar Pedido<i class="ri-check-double-line"></i></button>
+            <button class="submit" id="submit">Enviar Pedido <i class="ri-check-double-line"></i></button>
         </div>
     </main>
     <footer>
